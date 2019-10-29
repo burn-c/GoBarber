@@ -152,7 +152,7 @@ class AppointmentController {
 
     await appointment.save();
 
-    await Queue.add(CancellationMail.key, {
+    await Queue.add(CancellationMail.key, {planDel
       appointment
     });
 
